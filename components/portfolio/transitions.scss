@@ -1,0 +1,62 @@
+.tile {
+
+    .tile-img {
+        transition: width 1s;
+    }
+
+    transition: margin .6s;
+
+    // Hover behavior for stack-items
+/*     .tile-body {
+        .tile-stack {
+            .stack-item {
+                &:hover {
+                    background: rgb(155, 148, 148);
+                    color: $more-transparent;
+                    }
+                }
+        }
+    } */
+
+    &:hover {
+        background: rgb(163, 138, 138);
+        box-shadow: 2px 2px 4px rgb(64, 60, 68, 0);;
+        transition: background .6s;
+        //margin: 0px;
+        transition: margin .6s;
+        transition: background .4s;
+        transition: height .5s;
+
+        .tile-body {
+            .tile-stack {
+                .stack-item {
+                    background: rgb(white, .8);
+                }
+            }
+        }
+
+        .tile-img {
+            opacity: 100%;
+            //height: 80%;
+            //width: 105%;
+            transition: height .5s;
+            transition: width 1s;
+        }
+
+        h1.tile-title {
+            color: white;
+            //text-shadow: 3px 3px rgb(155, 148, 148);
+            //font-style: italic;
+            //letter-spacing: 3px;
+        }
+
+        /*  Border on Higlight
+        box-shadow: 0px 0px 0px 1px rgb($bg, 0.8);
+        .tile-img {
+            border-bottom: 1px solid rgb($bg, 0.8);
+        }
+        */
+
+    }
+
+}

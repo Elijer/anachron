@@ -1,0 +1,17 @@
+#textbox {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 460px;
+    margin-right: 200px;
+    margin-top: 15px;
+
+    #text-info {
+        border-radius: $rounded;
+        background: $more-transparent;
+        color: $brown;
+        padding: 10px;
+        font-size: 18px;
+    }
+
+}

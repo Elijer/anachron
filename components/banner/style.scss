@@ -1,0 +1,63 @@
+#banner {
+
+    // Experiment for keeping banner at the top of the page the whole time
+    // The idea would be that the tech items light up when you hover over the appropriate project
+    // position: fixed;
+    // background: $yellow;
+    // z-index: 100;
+
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+    //border-bottom: 18px solid rgb($orange, .3);
+    margin-left: 6px;
+    margin-right: 6px;            margin-bottom: 10px;
+    //color: rgb(29, 28, 28);
+
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    #site-title {
+        cursor: pointer;
+    }
+
+    h1 {
+        //color: rgb($bg, 0.1);
+        display: inline;
+        //margin: 6px;
+        line-height: 80px;
+        font-size: 70px;
+        font-weight: 600;
+        transition: color .4s;
+        padding-bottom: -10px;
+        letter-spacing: -1000;
+        //color: rgb($brown, .4);
+        //color: rgb($orange, .6);
+        color: rgb($orange, .6);
+        text-shadow: 2px 2px rgb(red, .1);
+
+        &:hover {
+            color: $purple;
+            text-shadow: 3px 3px $orange;
+
+            transition: color .4s;
+            transition: text-shadow .9s;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #banner {
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+
+        #site-title {
+            text-align: center;
+            font-size: 370%;
+            line-height: 40px;
+        }
+    }
+
+}

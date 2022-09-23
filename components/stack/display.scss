@@ -1,0 +1,44 @@
+#tech-description-display {
+    display: inline;
+    padding: 20px 50% 0px 0px;
+    font-size: 24px;
+    font-weight: 600;
+    transition: color .4s;
+    padding-bottom: -10px;
+    letter-spacing: -1000;
+    color: rgb($dark-brown, .7);
+
+    #tech-description-name {
+        display: inline;
+        border-bottom: 1px solid rgb($dark-brown, .7);
+    }
+
+    #name-block {
+        display: block;
+        padding-bottom: 10px;
+        opacity: .9
+    }
+
+    p#tech-description-description {
+        font-size: 20px;
+    }
+
+    .tech-list {
+        .tech-bubble {
+            background: black;
+        }
+    }
+    
+}
+
+@media screen and (max-width: 850px) {
+
+    #tech-description-display {
+        font-size: 18px;
+        padding: 20px 20% 0px 0px;
+
+        p#tech-description-description {
+            font-size: 15px;
+        }
+    }
+}
